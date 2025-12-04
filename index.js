@@ -54,7 +54,77 @@ const display=[
   { "id": 49, "name": "Rehan", "age": 30, "place": "Assam", "image": "https://i.pravatar.cc/150?img=49" },
   { "id": 50, "name": "Raman", "age": 35, "place": "Hyderabad", "image": "https://i.pravatar.cc/150?img=50" }
 ]
+<<<<<<< HEAD
 // HARI EDITION
+=======
+console.log(display);
+
+//const image=document.getElementById('image');
+//console.log(image,"listed");
+
+/*const list=display.map((fun) => {
+    return display;
+});
+image.innerHTML=list.join('');*/
+
+/*
+const output=display.map(item=>{
+  return '<div class="list" id="item-${item.id}">${item.title}</div>';
+}).join('');
+document.getElementsByClassName('list').innerHTML=output;
+//test
+const Nam=[{name:"Hari",place:"kottayam"},
+  {name:"chaithanya",place:"caliut"},
+  {name:"aparna",place:"calicut"}
+];
+console.log(Nam);
+Nam.map(Ns => {
+console.log('Name: ${Ns.name}, Place:${Ns.place}');
+});
+const image=document.getElementById('image');
+*/
+//const container=document.getElementById('list');
+//console.log(container);
+// const Nam=[{name:"Hari",place:"kottayam"},
+//   {name:"chaithanya",place:"caliut"},
+//   {name:"aparna",place:"calicut"}
+// ];
+
+// document.getElementById('list').innerHTML=Nam.map(item =>{
+//   const newDiv=document.createElement("new");
+//   newDiv.innerHTML=`${item.name}`;
+//   document.body.appendChild(newDiv);
+// }).join('');
+
+
+//CREATING ELEMENT
+// document.getElementById("list").innerHTML=display.map(items => {
+//   console.log(items);
+
+//  const neww=document.createElement("news");
+//  neww.innerHTML=`${items.title}`;
+//  neww.innerHTML=`<img src=${items.url}>`
+//  document.body.appendChild(neww);
+
+// }).join('');
+
+
+
+
+// HARI EDITION
+
+diocument.getElementById("list").innerHTML=diplay.map(hari => {
+    return 
+    .map(item => {
+      return `
+        <div class="card" key={hari.id}>
+          <img class="card-img" src="${hari.thumbnailUrl}" alt="${item.title}">
+          <h3 class="card-title">${hari.title}</h3>
+          <p class="card-text">ID: ${hari.id}</p>
+        </div>
+      `;.join("");
+
+>>>>>>> 6469d8fed0962081908da92ba0bb60349e085775
 
 document.getElementById("list").innerHTML=display.map(hari => {
       return `
