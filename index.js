@@ -2128,19 +2128,21 @@ const image=document.getElementById('image');
 //  document.body.appendChild(neww);
 
 // }).join('');
-const para=document.getElementById("para");
-const card=document.getElementById("list");
-console.log(card.appendChild(para));
-const p=card.appendChild(para);
-document.getElementById("list").innerHTML=display.map(Cha=> {
-p=Cha.title;
-  
-  // let paragraph=document.getElementById("para");
-  // paragraph.value=`${Cha.title}`;
-
-})
 
 
 
+
+// HARI EDITION
+
+diocument.getElementById("list").innerHTML=diplay.map(hari => {
+    return 
+    .map(item => {
+      return `
+        <div class="card" key={hari.id}>
+          <img class="card-img" src="${hari.thumbnailUrl}" alt="${item.title}">
+          <h3 class="card-title">${hari.title}</h3>
+          <p class="card-text">ID: ${hari.id}</p>
+        </div>
+      `;.join("");
 
 
