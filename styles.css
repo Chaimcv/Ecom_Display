@@ -23,3 +23,19 @@ img{
     width: 225px;
     height: 225px;
 }
+header{
+    text-align: center;
+    background-color: rgb(107, 107, 165);
+    font-size:x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.search{
+     background-color: rgb(235, 233, 233);
+     margin-top: 5px;
+}
+#search_btn{
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: rgb(94, 96, 190);
+   
+}

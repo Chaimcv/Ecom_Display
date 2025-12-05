@@ -55,7 +55,21 @@ const display=[
   { "id": 50, "name": "Raman", "age": 35, "place": "Hyderabad", "image": "https://i.pravatar.cc/150?img=50" }]
 
   // HARI EDITION
-document.getElementById("list").innerHTML=display.map(hari => {
+// const fill=display.map(hari => {
+//       return `
+//         <div class="card" key={hari.id}>
+//           <img class="card-img" src="${hari.image}" alt="${hari.name}">
+//           <h3 class="card-title">${hari.name}</h3>
+//           <p class="card-text">Age: ${hari.age}</p>
+//         </div>
+//       `;}).join("");
+//       document.getElementById("list").innerHTML=fill;
+
+//Filtering people whose age<30
+const filtered=display.filter(item=>{
+  return item.age<30
+});
+document.getElementById("list").innerHTML=filtered.map(hari => {
       return `
         <div class="card" key={hari.id}>
           <img class="card-img" src="${hari.image}" alt="${hari.name}">
@@ -64,4 +78,5 @@ document.getElementById("list").innerHTML=display.map(hari => {
         </div>
       `;}).join("");
 
-//Filtering people whose age<30
+
+
