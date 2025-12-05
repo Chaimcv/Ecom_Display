@@ -53,7 +53,8 @@ const display=[
   { "id": 48, "name": "Imran", "age": 29, "place": "Kerala", "image": "https://i.pravatar.cc/150?img=48" },
   { "id": 49, "name": "Rehan", "age": 30, "place": "Assam", "image": "https://i.pravatar.cc/150?img=49" },
   { "id": 50, "name": "Raman", "age": 35, "place": "Hyderabad", "image": "https://i.pravatar.cc/150?img=50" }]
-// HARI EDITION
+
+  // HARI EDITION
 document.getElementById("list").innerHTML=display.map(hari => {
       return `
         <div class="card" key={hari.id}>
@@ -62,3 +63,5 @@ document.getElementById("list").innerHTML=display.map(hari => {
           <p class="card-text">Age: ${hari.age}</p>
         </div>
       `;}).join("");
+
+//Filtering people whose age<30

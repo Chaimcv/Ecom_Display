@@ -1,11 +1,11 @@
 .card{
     background-color: white;
-    border-radius: 30px;
+    border-radius: 25px;
     padding: 10px;
 }
 #list{
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 25px;
     grid-template-columns: auto auto auto auto auto;
     padding: 20px;
     background-color: rgb(235, 233, 233);
@@ -18,4 +18,8 @@ p{
     display: flex;
     justify-content: end;
     padding-left: 100px;   
+}
+img{
+    width: 225px;
+    height: 225px;
 }
