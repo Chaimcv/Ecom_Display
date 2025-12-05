@@ -63,3 +63,4 @@ document.getElementById("list").innerHTML=display.map(hari => {
           <p class="card-text">Age: ${hari.age}</p>
         </div>
       `;}).join("");
+
