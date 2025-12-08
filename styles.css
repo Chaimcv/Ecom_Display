@@ -37,11 +37,12 @@ header{
 }
 .search{
      background-color: rgb(235, 233, 233);
-     margin-top: 5px;
 }
 #find{
     border-radius: 5px;
     border-color: rgb(168, 167, 167);
+    margin-left: 580px;
+    height: 20px;
 }
 #search_btn{
     padding: 10px 40px;
