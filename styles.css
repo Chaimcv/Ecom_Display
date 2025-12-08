@@ -26,12 +26,22 @@ img{
 header{
     text-align: center;
     background-color: rgb(107, 107, 165);
-    font-size:x-large;
+    font-size:90px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.desc{
+     text-align: center;
+    background-color: rgb(235, 233, 233);
+    width: 100%;
+    color: black;
 }
 .search{
      background-color: rgb(235, 233, 233);
      margin-top: 5px;
+}
+#find{
+    border-radius: 5px;
+    border-color: rgb(168, 167, 167);
 }
 #search_btn{
     padding: 10px 40px;
