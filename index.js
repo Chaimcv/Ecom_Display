@@ -54,35 +54,15 @@ const display=[
   { "id": 49, "name": "rehan", "age": 30, "place": "Assam", "image": "https://i.pravatar.cc/150?img=49" },
   { "id": 50, "name": "raman", "age": 35, "place": "Hyderabad", "image": "https://i.pravatar.cc/150?img=50" }]
 
-  // HARI EDITION
-const fill=display.map(hari => {
+const fill=display.map(items => {
       return `
-        <div class="card" key={hari.id}>
-          <img class="card-img" src="${hari.image}" alt="${hari.name}">
-          <h3 class="card-title" style="text-transform:uppercase;">${hari.name}</h3>
-          <p class="card-text">Age: ${hari.age}</p>
+        <div class="card" key={items.id}>
+          <img class="card-img" src="${items.image}" alt="${items.name}">
+          <h3 class="card-title" style="text-transform:uppercase;">${items.name}</h3>
+          <p class="card-text">Age: ${items.age}</p>
         </div>
       `;}).join("");
       document.getElementById("list").innerHTML=fill;
-
-//Filtering people whose age<30
-// function sort(){
-// const filtered=
-// console.log("ss");
-//   display.filter(item=>{
-//   return item.age<30
-// });
-// console.log(filtered);
-// document.getElementById("list").innerHTML=filtered.map(hari => {
-//       return `
-//         <div class="card" key={hari.id}>
-//           <img class="card-img" src="${hari.image}" alt="${hari.name}">
-//           <h3 class="card-title">${hari.name}</h3>
-//           <p class="card-text">Age: ${hari.age}</p>
-//         </div>
-//       `;}).join("");
-
-// }
 
 const value=document.getElementById("find");
 const inputresult=value.addEventListener('input', function(e) {
@@ -90,12 +70,13 @@ const inputresult=value.addEventListener('input', function(e) {
      const names=display.filter(item=>{
       return item.name.includes(result);
     });
-    document.getElementById("list").innerHTML=names.map(hari => {
+   
+    document.getElementById("list").innerHTML=names.map(items => {
       return `
-        <div class="card" key={hari.id}>
-          <img class="card-img" src="${hari.image}" alt="${hari.name}">
-          <h3 class="card-title" style="text-transform:uppercase;">${hari.name}</h3>
-          <p class="card-text">Age: ${hari.age}</p>
+        <div class="card" key={items.id}>
+          <img class="card-img" src="${items.image}" alt="${items.name}">
+          <h3 class="card-title" style="text-transform:uppercase;">${items.name}</h3>
+          <p class="card-text">Age: ${items.age}</p>
         </div>
       `;}).join("");
 })
