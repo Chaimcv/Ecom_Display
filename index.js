@@ -57,9 +57,9 @@ const display=[
 const fill=display.map(items => {
       return `
         <div class="card" key={items.id}>
-          <img class="card-img" src="${items.image}" alt="${items.name}">
-          <h3 class="card-title" style="text-transform:uppercase;">${items.name}</h3>
-          <p class="card-text">Age: ${items.age}</p>
+          <img class="card-img" src="${items?.image}" alt="${items?.name}">
+          <h3 class="card-title" style="text-transform:uppercase;">${items?.name}</h3>
+          <p class="card-text">Age: ${items?.age}</p>
         </div>
       `;}).join("");
       document.getElementById("list").innerHTML=fill;
@@ -71,13 +71,15 @@ const inputresult=value.addEventListener('input', function(e) {
       return item.name.includes(result);
     });
    
+    console.log(names);
+   names.length!=0?
     document.getElementById("list").innerHTML=names.map(items => {
       return `
         <div class="card" key={items.id}>
-          <img class="card-img" src="${items.image}" alt="${items.name}">
-          <h3 class="card-title" style="text-transform:uppercase;">${items.name}</h3>
-          <p class="card-text">Age: ${items.age}</p>
+          <img class="card-img" src="${items?.image}" alt="${items?.name}">
+          <h3 class="card-title" style="text-transform:uppercase;">${items?.name}</h3>
+          <p class="card-text">Age: ${items?.age}</p>
         </div>
-      `;}).join("");
+      `;}).join(""):alert("Not found");
 })
 
