@@ -6,7 +6,7 @@
 #list{
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 20px;
     background-color: rgb(235, 233, 233);
 }
@@ -20,13 +20,14 @@ p{
     padding-left: 100px;   
 }
 img{
-    width: 225px;
-    height: 225px;
+    width: 285px;
+    height: 285px;
+    border-radius: 10%;
 }
 header{
-    text-align: center;
+    text-align: left;
     background-color: rgb(107, 107, 165);
-    font-size:90px;
+    font-size:50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .desc{
@@ -36,13 +37,14 @@ header{
     color: black;
 }
 .search{
-     background-color: rgb(235, 233, 233);
+     background-color: rgb(235, 233, 233);   
 }
 #find{
     border-radius: 5px;
     border-color: rgb(168, 167, 167);
-    margin-left: 580px;
+    margin-left: 400px;
     height: 20px;
+    width: 40%;
 }
 #search_btn{
     padding: 10px 40px;
