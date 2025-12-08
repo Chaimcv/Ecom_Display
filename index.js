@@ -70,8 +70,6 @@ const inputresult=value.addEventListener('input', function(e) {
      const names=display.filter(item=>{
       return item.name.includes(result);
     });
-   
-    console.log(names);
    names.length!=0?
     document.getElementById("list").innerHTML=names.map(items => {
       return `
@@ -80,6 +78,6 @@ const inputresult=value.addEventListener('input', function(e) {
           <h3 class="card-title" style="text-transform:uppercase;">${items?.name}</h3>
           <p class="card-text">Age: ${items?.age}</p>
         </div>
-      `;}).join(""):alert("Not found");
+      `;}).join(""):alert(result+ "  not found");
 })
 
