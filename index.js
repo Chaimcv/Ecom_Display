@@ -70,8 +70,6 @@ const inputresult=value.addEventListener('input', function(e) {
      const names=display.filter(item=>{
       return item.name.includes(result);
     });
-   
-    console.log(names);
    names.length!=0?
     document.getElementById("list").innerHTML=names.map(items => {
       return `
